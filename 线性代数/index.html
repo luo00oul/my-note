@@ -383,7 +383,180 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        矩阵表示
+        一、向量与向量空间
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、向量与向量空间">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义：向量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        向量表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、矩阵与线性变换
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、矩阵与线性变换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义：矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        线性方程组
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、行列式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、行列式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义：行列式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二阶行列式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、特征值与特征向量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、特征值与特征向量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、例题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、例题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、小结
       
     </span>
   </a>
@@ -473,21 +646,79 @@
 
 
 <h1 id="_1">线性代数<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>行列式、矩阵、特征值……</p>
-<h2 id="_2">矩阵表示<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>本页用于整理线性代数的核心概念、定理与例题，偏向理解与复习。</p>
+</blockquote>
+<hr />
+<h2 id="_2">一、向量与向量空间<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">定义：向量<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>向量是可以进行加法与数乘运算的对象。</p>
+</div>
+<h3 id="_4">向量表示<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[
-A =
-\begin{pmatrix}
-1 &amp; 2 \\
-3 &amp; 4
-\end{pmatrix},
-\quad
-x =
+\mathbf{x} =
 \begin{pmatrix}
 x_1 \\
-x_2
+x_2 \\
+\vdots \\
+x_n
 \end{pmatrix}
 \]</div>
+<hr />
+<h2 id="_5">二、矩阵与线性变换<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_6">定义：矩阵<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>矩阵是线性变换在基下的表示。</p>
+</div>
+<h3 id="_7">线性方程组<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+A\mathbf{x} = \mathbf{b}
+\]</div>
+<hr />
+<h2 id="_8">三、行列式<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="_9">定义：行列式<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>行列式描述矩阵对应线性变换的“体积缩放因子”。</p>
+</div>
+<h3 id="_10">二阶行列式<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\det
+\begin{pmatrix}
+a &amp; b \\
+c &amp; d
+\end{pmatrix}
+= ad - bc
+\]</div>
+<hr />
+<h2 id="_11">四、特征值与特征向量<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h3 id="_12">定义<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>说明矩阵在某些方向上的“伸缩特性”。</p>
+<div class="arithmatex">\[
+A\mathbf{x} = \lambda \mathbf{x}
+\]</div>
+<hr />
+<h2 id="_13">五、例题<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="1">例 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>求矩阵 <span class="arithmatex">\(A\)</span> 的特征值。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>常见步骤：<br />
+1. 写出 <span class="arithmatex">\(|A - \lambda I|\)</span><br />
+2. 求行列式<br />
+3. 解特征方程</p>
+</div>
+<hr />
+<h2 id="_14">六、小结<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<ul>
+<li>向量 → 空间  </li>
+<li>矩阵 → 变换  </li>
+<li>行列式 → 体积  </li>
+<li>特征值 → 方向</li>
+</ul>
 
 
 
