@@ -1,0 +1,50 @@
+/* 定义主题变量 */
+:root {
+  --theme-bg-image: url("elysia_day.jpg");
+}
+
+[data-md-color-scheme="slate"] {
+  --theme-bg-image: url("elysia_night.jpg");
+}
+
+/* 应用背景图 */
+body {
+  background-image: var(--theme-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ❌ 彻底移除白色背景板 */
+.md-main__inner {
+  background: transparent;
+  backdrop-filter: none;
+  padding: 2rem;
+}
+
+/* 正文区域稍微压暗，保证可读性 */
+.md-typeset {
+  color: #1f1f1f;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6);
+}
+
+/* 标题再加一点对比度 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: #111;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+/* 夜间模式：反过来 */
+[data-md-color-scheme="slate"] .md-typeset {
+  color: #f0f0f0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
