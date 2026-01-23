@@ -48,3 +48,17 @@ body {
   color: #ffffff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
+
+/* 高亮样式 */
+mark {
+    background-color: #ffeb3b; /* 黄色背景 */
+    color: #000;
+    padding: 0.1em 0.2em;
+    border-radius: 2px;
+}
+
+/* 深色模式下的高亮样式 */
+[data-md-color-scheme="slate"] mark {
+    background-color: #ffc107; /* 深黄色 */
+    color: #000;
+}
