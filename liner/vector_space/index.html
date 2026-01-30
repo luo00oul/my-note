@@ -12,29 +12,31 @@
         <meta name="author" content="luo00oul">
       
       
-        <link rel="canonical" href="https://luo00oul.github.io/my-note/">
+        <link rel="canonical" href="https://luo00oul.github.io/my-note/liner/vector_space/">
       
       
+        <link rel="prev" href="../number_field/">
       
-        <link rel="next" href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+      
+        <link rel="next" href="../../Python/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>luo00oul 的笔记</title>
+        <title>向量空间 - luo00oul 的笔记</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="extra/background.css">
+      <link rel="stylesheet" href="../../extra/background.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#luo00oul" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -96,7 +98,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="luo00oul 的笔记" class="md-header__button md-logo" aria-label="luo00oul 的笔记" data-md-component="logo">
+    <a href="../.." title="luo00oul 的笔记" class="md-header__button md-logo" aria-label="luo00oul 的笔记" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              首页
+              向量空间
             
           </span>
         </div>
@@ -236,7 +238,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="luo00oul 的笔记" class="md-nav__button md-logo" aria-label="luo00oul 的笔记" data-md-component="logo">
+    <a href="../.." title="luo00oul 的笔记" class="md-nav__button md-logo" aria-label="luo00oul 的笔记" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -263,37 +265,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    首页
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -309,109 +284,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 内容导航
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📚 内容导航">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧠 数据结构
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📐 线性代数
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🐍 Python
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#latex" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🧾 LaTeX
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ❤️ 离散数学
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠 使用说明
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -423,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="md-nav__link">
+      <a href="../../%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="md-nav__link">
         
   
   
@@ -447,8 +319,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -459,13 +333,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -486,7 +358,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -504,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="liner/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -532,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="liner/number_field/" class="md-nav__link">
+      <a href="../number_field/" class="md-nav__link">
         
   
   
@@ -557,10 +429,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="liner/vector_space/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    向量空间
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -576,6 +475,252 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        图示说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        向量表示与运算定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        行/列向量运算规则（*）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        例5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        命题3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="命题3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 零向量唯一
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 负向量唯一
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (3) 消去律
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (5)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (6)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (7)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        推论
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -649,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/" class="md-nav__link">
+      <a href="../../Python/" class="md-nav__link">
         
   
   
@@ -677,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Python/" class="md-nav__link">
+      <a href="../../Python/Python/" class="md-nav__link">
         
   
   
@@ -705,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Python/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="md-nav__link">
+      <a href="../../Python/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" class="md-nav__link">
         
   
   
@@ -740,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="LaTeX/" class="md-nav__link">
+      <a href="../../LaTeX/" class="md-nav__link">
         
   
   
@@ -767,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="discrete_Math/0127/" class="md-nav__link">
+      <a href="../../discrete_Math/0127/" class="md-nav__link">
         
   
   
@@ -807,60 +952,198 @@
   
 
 
-<h1 id="luo00oul">👋 欢迎来到 luo00oul 的笔记<a class="headerlink" href="#luo00oul" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>这里记录我在 <strong>计算机科学 / 数学 / 工具链</strong> 学习过程中的思考与总结。<br />
-内容以「<strong>能复习、能查阅、能长期维护</strong>」为目标。</p>
-</blockquote>
+<h1 id="_1">向量空间<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="_1">📚 内容导航<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="_2">🧠 数据结构<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<ul>
-<li>线性表、栈、队列</li>
-<li>树与图（DFS / BFS）</li>
-<li>常见算法思想</li>
-</ul>
-<p>👉 <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">进入数据结构</a></p>
+<h3 id="_2">图示说明<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>在 <span class="arithmatex">\(\mathbb{R}^3\)</span> 中，向量 <span class="arithmatex">\(\vec{OC}\)</span> 与点 <span class="arithmatex">\(C\)</span> 一一对应，且点 <span class="arithmatex">\(C\)</span> 可表示为有序三元组 <span class="arithmatex">\((a,b,c)\)</span>，其中 <span class="arithmatex">\(a,b,c\in\mathbb{R}\)</span>。</p>
+<div class="arithmatex">\[
+\{\vec{OC}\in\mathbb{R}^3\}
+\longleftrightarrow
+\{\text{点 }C\}
+\longleftrightarrow
+\{(a,b,c)\mid a,b,c\in\mathbb{R}\}
+\]</div>
 <hr />
-<h3 id="_3">📐 线性代数<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="1">定义1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>设 <span class="arithmatex">\(K\)</span> 为数域，<span class="arithmatex">\(a_1,a_2,\ldots,a_n\in K\)</span>。</p>
 <ul>
-<li>实话说学了一个学期线代并不知道自己学了什么以及有什么用，所以再学一遍，或者说称这个为高代</li>
+<li><span class="arithmatex">\(1\times n\)</span> 矩阵 <span class="arithmatex">\((a_1,a_2,\ldots,a_n)\)</span> 称为 <span class="arithmatex">\(K\)</span> 上的 <span class="arithmatex">\(n\)</span> 维行向量。</li>
+<li><span class="arithmatex">\(n\times1\)</span> 矩阵 <span class="arithmatex">\(\begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix}\)</span> 称为 <span class="arithmatex">\(K\)</span> 上的 <span class="arithmatex">\(n\)</span> 维列向量。</li>
 </ul>
-<p>👉 <a href="liner/">进入线性代数</a></p>
+<p>记：</p>
+<div class="arithmatex">\[
+K^n=\{(a_1,a_2,\ldots,a_n)\mid a_i\in K,1\le i\le n\}
+\]</div>
+<div class="arithmatex">\[
+K^n=\left\{
+\begin{pmatrix}
+a_1\\a_2\\\vdots\\a_n
+\end{pmatrix}
+\mid a_i\in K,1\le i\le n
+\right\}
+\]</div>
 <hr />
-<h3 id="python">🐍 Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<h3 id="_3">向量表示与运算定义<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>设</p>
+<div class="arithmatex">\[
+\alpha=
+\begin{pmatrix}
+a_1\\a_2\\\vdots\\a_n
+\end{pmatrix},\quad
+\beta=
+\begin{pmatrix}
+b_1\\b_2\\\vdots\\b_n
+\end{pmatrix}\in K^n,
+\]</div>
+<div class="arithmatex">\[
+c\in K,\quad
+0=
+\begin{pmatrix}
+0\\\vdots\\0
+\end{pmatrix}
+\]</div>
+<p>定义：</p>
 <ul>
-<li>基础语法</li>
-<li>常用库</li>
-<li>刷题 &amp; 小工具</li>
+<li>相等：<span class="arithmatex">\(\alpha=\beta \iff a_i=b_i,\forall i\)</span></li>
+<li>加法：
+$$
+\alpha+\beta=
+\begin{pmatrix}
+a_1+b_1\
+a_2+b_2\
+\vdots\
+a_n+b_n
+\end{pmatrix}
+$$</li>
+<li>数乘：
+$$
+c\alpha=
+\begin{pmatrix}
+ca_1\
+ca_2\
+\vdots\
+ca_n
+\end{pmatrix}
+$$</li>
+<li>负向量：
+$$
+-\alpha=(-1)\alpha=
+\begin{pmatrix}
+-a_1\
+-a_2\
+\vdots\
+-a_n
+\end{pmatrix}
+$$</li>
 </ul>
-<p>👉 <a href="Python/">进入 Python</a></p>
 <hr />
-<h3 id="latex">🧾 LaTeX<a class="headerlink" href="#latex" title="Permanent link">&para;</a></h3>
-<ul>
-<li>数学公式排版</li>
-<li>笔记 / 作业模板</li>
-<li>常用技巧</li>
-</ul>
-<p>👉 <a href="LaTeX/">进入 LaTeX</a></p>
+<h3 id="_4">行/列向量运算规则（*）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>设 <span class="arithmatex">\(\alpha,\beta,\gamma\in K^n\)</span>, <span class="arithmatex">\(k,l\in K\)</span></p>
+<ol>
+<li><span class="arithmatex">\(\alpha+\beta=\beta+\alpha\)</span></li>
+<li><span class="arithmatex">\(\alpha+(\beta+\gamma)=(\alpha+\beta)+\gamma\)</span></li>
+<li><span class="arithmatex">\(\alpha+0=\alpha\)</span></li>
+<li><span class="arithmatex">\(\alpha+(-\alpha)=0\)</span></li>
+<li><span class="arithmatex">\(1\cdot\alpha=\alpha\)</span></li>
+<li><span class="arithmatex">\((k+l)\alpha=k\alpha+l\alpha\)</span></li>
+<li><span class="arithmatex">\(k(\alpha+\beta)=k\alpha+k\beta\)</span></li>
+<li><span class="arithmatex">\(k(l\alpha)=(kl)\alpha\)</span></li>
+</ol>
 <hr />
-<h3 id="_4">❤️ 离散数学<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<ul>
-<li>离散数学学习记录</li>
-<li>英文笔记</li>
-</ul>
-<p>👉 <a href="discrete_Math/0127/">进入 0127</a></p>
-<h2 id="_5">🛠 使用说明<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ul>
-<li>左侧导航栏可快速切换章节</li>
-<li>支持全文搜索</li>
-<li>所有公式均支持 LaTeX 语法</li>
-</ul>
+<h3 id="2">定义2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>设 <span class="arithmatex">\(K\)</span> 为数域，<span class="arithmatex">\(V\)</span> 为非空集合。</p>
+<p>加法：
+$$
++ : V\times V\to V
+$$</p>
+<p>数乘：
+$$
+\cdot : K\times V\to V
+$$</p>
+<p>若满足八条性质，则 <span class="arithmatex">\(V\)</span> 为 <span class="arithmatex">\(K\)</span> 上的线性空间（向量空间）。</p>
 <hr />
-<blockquote>
-<p>📌 本站使用 <strong>MkDocs + Material for MkDocs</strong> 构建<br />
-持续更新中…</p>
-</blockquote>
+<h3 id="1_1">例1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(K^n\)</span> 和 <span class="arithmatex">\(K_n\)</span> 是 <span class="arithmatex">\(K\)</span> 上的线性空间。</p>
+<hr />
+<h3 id="2_1">例2<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+K[x]=\{a_nx^n+\cdots+a_1x+a_0\mid a_i\in K\}
+\]</div>
+<p>加法与数乘按多项式定义，满足八条性质。</p>
+<hr />
+<h3 id="3">例3<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(C[0,1]\)</span>：区间 <span class="arithmatex">\([0,1]\)</span> 上连续函数集合。</p>
+<div class="arithmatex">\[
+(f+g)(x)=f(x)+g(x)
+\]</div>
+<div class="arithmatex">\[
+(kf)(x)=k f(x)
+\]</div>
+<hr />
+<h3 id="4">例4<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(M_{m\times n}(K)\)</span>：<span class="arithmatex">\(m\times n\)</span> 矩阵集合。</p>
+<hr />
+<h3 id="5">例5<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<p>若 <span class="arithmatex">\(K_1\subseteq K_2\)</span>，则 <span class="arithmatex">\(K_2\)</span> 是 <span class="arithmatex">\(K_1\)</span> 上的线性空间。</p>
+<p>特别地，<span class="arithmatex">\(K\)</span> 是自身上的向量空间。</p>
+<hr />
+<h3 id="3_1">命题3<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<p>设 <span class="arithmatex">\(V\)</span> 为线性空间。</p>
+<h4 id="1_2">(1) 零向量唯一<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+0_1=0_1+0_2=0_2
+\]</div>
+<hr />
+<h4 id="2_2">(2) 负向量唯一<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\alpha+\beta=0,\quad \alpha+\gamma=0
+\]</div>
+<div class="arithmatex">\[
+\beta=\gamma
+\]</div>
+<hr />
+<h4 id="3_2">(3) 消去律<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\alpha+\beta=\alpha+\gamma\Rightarrow\beta=\gamma
+\]</div>
+<hr />
+<h4 id="4_1">(4)<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+0\cdot\alpha=\vec{0}
+\]</div>
+<hr />
+<h4 id="5_1">(5)<a class="headerlink" href="#5_1" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+k\vec{0}=\vec{0}
+\]</div>
+<hr />
+<h4 id="6">(6)<a class="headerlink" href="#6" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+-\alpha=(-1)\alpha
+\]</div>
+<hr />
+<h4 id="7">(7)<a class="headerlink" href="#7" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+k\alpha=\vec{0}\Rightarrow k=0\text{ 或 }\alpha=\vec{0}
+\]</div>
+<hr />
+<h3 id="_5">推论<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\alpha=\beta+\gamma
+\iff
+\alpha-\beta=\gamma
+\iff
+\alpha-\beta-\gamma=0
+\]</div>
+<div class="arithmatex">\[
+\alpha-\beta=\alpha+(-\beta)
+\]</div>
+<hr />
+<h3 id="_6">注<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\alpha_1+\alpha_2+\cdots+\alpha_n
+\]</div>
+<p>由结合律定义且唯一。</p>
 
 
 
@@ -920,14 +1203,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="extra/particles.js"></script>
+        <script src="../../extra/particles.js"></script>
       
     
   </body>
